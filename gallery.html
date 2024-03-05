@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>QuickSnack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="gallery">
     <header>
         <nav class="navbar">
             <a class="nav-logo" href="index.html"><Span>Quick</Span>Snacks</a>
             <div class="nav-content" id="navContent">
                 <ul id="menu">
-                    <li><a class="active" aria-current="page" href="/">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a  aria-current="page" href="index.html">Home</a></li>
+                    <li><a class="active" href="gallery.html">Gallery</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <!-- <li><a href="contact.html">Contact Us</a></li> -->
                     <div class="dropdown">
                         <i class="fa-solid fa-user" id="dropbtn"></i>
                         <div class="dropdown-content">
@@ -33,45 +36,46 @@
             </div>
         </nav>
     </header>
-    <section>
+    
+    <section> 
         <div class="gallery-container">
             <h1>Food <span>Gallery</span></h1>
-        <div class="gallery">
-            <div class="gallery-image">
-                <img src="image/burger.jpg" alt="">
+        <div class="galleryImg">
+            <div class="gallery image1">
+                <img src="image/Burger.jpg" alt="">
             </div>
-            <div class="gallery-image">
-                <img src="image/sandwich.jpg" alt="">
+            <div class="gallery image2">
+                <img src="image/frech-fries.jpg" alt="">
             </div>
-            <div class="gallery-image">
-                <img src="image/buff-keema-noodles.png" alt="">
-            </div>
-            <div class="gallery-image">
-                <img src="image/tomato_ burger.jpg" alt="">
-            </div>
-            <div class="gallery-image">
-                <img src="image/kfc_wings.jpg" alt="">
-            </div>
-            <div class="gallery-image">
-                <img src="image/veg-pulao.jpg" alt="">
-            </div>
-            <div class="gallery-image">
-                <img src="image/pizza1.jpg" alt="">
-            </div>
-            <div class="gallery-image">
+            <div class="gallery image3">
                 <img src="image/RamenNoodles.jpg" alt="">
             </div>
-            <div class="gallery-image">
-                <img src="image/chowmein.avif" alt="">
+            <div class="gallery image4">
+                <img src="image/buff-keema-noodles.png" alt="">
             </div>
-            <div class="gallery-image">
-                <img src="image/momo.jpg" alt="">
+            <div class="gallery image5">
+                <img src="image/fruits salad.jpg" alt="">
             </div>
-            <div class="gallery-image">
-                <img src="image/brgar.jpg" alt="">
+            <div class="gallery image6">
+                <img src="image/Beef-Fried-Rice.jpg" alt="">
             </div>
-            <div class="gallery-image">
-                <img src="image/frech-fries.jpg" alt="">
+            <div class="gallery image7">
+                <img src="image/pizza1.jpg" alt="">
+            </div>
+            <div class="gallery image8">
+                <img src="image/sandwich1.jpg" alt="">
+            </div>
+            <div class="gallery image9">
+                <img src="image/fries.webp" alt="">
+            </div>
+            <div class="gallery image10">
+                <img src="image/kfc_wings.jpg" alt="">
+            </div>
+            <div class="gallery image11">
+                <img src="image/kfc_chicken.jpg" alt="">
+            </div>
+            <div class="gallery image12">
+                <img src="image/veg-pulao.jpg" alt="">
             </div>
         </div>
     </div>
@@ -93,6 +97,7 @@
                         <button type="submit" class="subs">Subscribe</button>
                     </div>
                     </form>
+                   
                 </div>
             </div>
             <div class="terms">
@@ -104,7 +109,11 @@
                         <a href="#/">Privacy Policy</a>
                     </li>
                 </ul>
+                
                 <div class="icons">
+                    <div class="follow">
+                        <h5>Follow us</h5>
+                    </div>
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-youtube"></i></a>
@@ -115,6 +124,9 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/296f844599.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=URL"></script>
+    <script src="index2.js"></script>
 </body>
 </html>

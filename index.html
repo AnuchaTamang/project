@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Ordering System</title>
+    <title>Quick Snacks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +18,8 @@
                     <li><a class="active" aria-current="page" href="index.html">Home</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                    <!-- <li><a href="contact.html">Contact Us</a></li> -->
                     <div class="dropdown">
                         <i class="fa-solid fa-user" id="dropbtn"></i>
                         <div class="dropdown-content">
@@ -25,6 +27,10 @@
                             <a href="#">Sign Up</a>
                             </div>
                     </div>
+                    <div class="box">
+                        <div class="cart-count">0</div>
+                        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                      </div>
                   </ul>
             <div class="navClose" id ="nav-Close">
                 <i class="fa-solid fa-xmark"></i>
@@ -41,8 +47,9 @@
                 <h1>When you are <span>Home Alone and </span>Hungry?</h1>
                 <p>The Quick Sancks is the best website for explore new snacks and Recipe's of food and smoothies  it is very simple to use and the best way to find new with the help of us.</p>
                 <form>
-                    <input type="search" placeholder="Search foods"></input>
+                    <input type="search"placeholder="Search foods" id="searchInput"></input>
                    <a href="#/"><i class="fa-solid fa-magnifying-glass"></i></a>
+                   <div id="searchResults"></div>
                 </form>
             </div>
             <div class="heroImage">
@@ -109,10 +116,6 @@
     <section>
             <div class="nav">
                 <div class="fixed-box">
-              <div class="box">
-                <div class="cart-count">0</div>
-                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
-              </div>
             </div>
         
               <div class="cart">
@@ -136,7 +139,7 @@
         
               <div class="food-box">
                 <div class="pic">
-                  <img src="image/burger.jpg" class="food-img">
+                  <img src="image/Burger.jpg" class="food-img">
                 </div>
                 <h2 class="food-title">Burger</h2>
                 <i id="a" class="fa-solid fa-star"></i>
@@ -157,7 +160,7 @@
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="b" class="fa-regular fa-star"></i>
-                <p class="food-price">Rs.65</p>
+                <p class="food-price">Rs.350</p>
                 <button class="add-cart">Add to cart</button>
               </div>
           
@@ -169,19 +172,19 @@
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="b" class="fa-regular fa-star"></i>
-                <p class="food-price">Rs.80</p>
+                <p class="food-price">Rs.100</p>
                 <button class="add-cart">Add to cart</button>
               </div>
           
               <div class="food-box">
                 <div class="pic"><img src="image/pizza.jpg" class="food-img"></div>
-                <h2 class="food-title">Rice</h2>
+                <h2 class="food-title">Pizza</h2>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="b" class="fa-regular fa-star"></i>
-                <p class="food-price">Rs.55</p>
+                <p class="food-price">Rs.250</p>
                 <button class="add-cart">Add to cart</button>
               </div>
           
@@ -193,7 +196,7 @@
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="b" class="fa-regular fa-star"></i>
-                <p class="food-price">Rs.25</p>
+                <p class="food-price">Rs.800</p>
                 <button class="add-cart">Add to cart</button>
               </div>
           
@@ -205,7 +208,7 @@
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="b" class="fa-regular fa-star"></i>
-                <p class="food-price">Rs.150</p>
+                <p class="food-price">Rs.500</p>
                 <button class="add-cart">Add to cart</button>
               </div>
           
@@ -218,20 +221,20 @@
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="b" class="fa-regular fa-star"></i>
-                <p class="food-price">Rs.65</p>
+                <p class="food-price">Rs.250</p>
                 <button class="add-cart">Add to cart</button>
               </div>
           
           
               <div class="food-box">
                 <div class="pic"><img src="image/buff_keema_noodles.jpg" class="food-img"></div>
-                <h2 class="food-title">Burger</h2>
-                <i id="a" class="fa-solid fa-star"></i>
+                <h2 class="food-title">Keema Noodles</h2>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="a" class="fa-solid fa-star"></i>
                 <i id="b" class="fa-regular fa-star"></i>
-                <p class="food-price">Rs.65</p>
+                <i id="b" class="fa-regular fa-star"></i>
+                <p class="food-price">Rs.200</p>
                 <button class="add-cart">Add to cart</button>
               </div>
             </div>
@@ -293,6 +296,7 @@
     <script src="https://kit.fontawesome.com/296f844599.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="search.js"></script>
     <script defer src="index.js"></script>
 </body>
 </html>
